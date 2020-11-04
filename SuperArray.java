@@ -81,11 +81,18 @@ public class SuperArray{
         }
         size++;
     }
-/*
-    public String remove(int index){
-        
-    }
 
+    public String remove(int index){
+        String[] temp = data;
+        data = new String[data.length];
+        for(int i = 0; i<index; i++){
+            data[i]=temp[i];
+            if (i-1 == index)
+            i++;
+        }
+        return temp[index];
+    }
+/*
     public int indexOf(String s){
         
     }
