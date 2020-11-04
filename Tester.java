@@ -6,7 +6,7 @@ public class Tester{
         words.add("uni");
         words.add("ebi");
         System.out.println(words);
-        words.add("kani");
+        words.add(3,"3");
         words.add("uni");
         words.add("ebi");
         words.add("kani");
