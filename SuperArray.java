@@ -53,7 +53,7 @@ public class SuperArray{
         String out = "[";
         if (!isEmpty()){
             out += data[0]; 
-            for (int i = 1; i<size-1; i++){
+            for (int i = 1; i<size; i++){
                 out+=", " + data[i];
             }
         }
