@@ -76,6 +76,13 @@ public class Tester{
         words.add("Cool");
         for(int i = 0; i < words.size(); i++){
         System.out.println( words.get(i) );
-        }
+            }
+        for(int i = 0; i < words.size(); i++){
+            words.set(i,""+i);
+            }
+        for(int i = 0; i < words.size(); i++){
+            System.out.println( words.get(i) );
+            }
+        
     }
 }

@@ -40,5 +40,24 @@ public class SuperArray{
         }
     }
 
+    public boolean isEmpty(){
+        return size == 0;
+    }
 
+    public void clear(){
+        size = 0;
+        data = new String[10];
+    }
+
+    public String toString(){
+        String out = "[";
+        if (!isEmpty()){
+            out += data[0]; 
+            for (int i = 1; i<size-1; i++){
+                out+=", " + data[i];
+            }
+        }
+        out += "]";
+        return out;
+    }
 }
