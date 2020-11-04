@@ -53,6 +53,8 @@ public class Tester{
         words.add("What");
         words.add("The");
         words.add("Cool");
+        words.clear();
+        System.out.println(words);
         words.add("my");
         System.out.println(words);
         words.add("name");
