@@ -9,8 +9,11 @@ public class Tester{
         words.add(3,"3");
         words.add("uni");
         words.add("ebi");
+        words.add(3,"2");
         words.add("kani");
+        System.out.println(words.remove(3));
         words.add("uni");
+        words.add(3,"1");
         words.add("ebi");
         System.out.println(words);
         words.add("kani");

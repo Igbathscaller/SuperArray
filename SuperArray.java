@@ -87,9 +87,11 @@ public class SuperArray{
         data = new String[data.length];
         for(int i = 0; i<index; i++){
             data[i]=temp[i];
-            if (i-1 == index)
-            i++;
         }
+        for(int i = index+1; i<size; i++){
+            data[i-1]=temp[i];
+        }
+        size--;
         return temp[index];
     }
 /*
