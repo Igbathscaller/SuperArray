@@ -94,11 +94,17 @@ public class SuperArray{
         size--;
         return temp[index];
     }
-/*
+
     public int indexOf(String s){
-        
+        for(int i=0; i<size; i++){
+            if (s.equals(data[i])){
+                return i;
+            }
+        }
+        return -1;
     }
 
+/*
     public String[] toArray(){
 
     }

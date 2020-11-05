@@ -14,6 +14,7 @@ public class Tester{
         System.out.println(words.remove(3));
         words.add("uni");
         words.add(3,"1");
+        System.out.println(words.remove(2));
         words.add("ebi");
         System.out.println(words);
         words.add("kani");
@@ -21,6 +22,7 @@ public class Tester{
         words.add("ebi");
         words.add("kani");
         words.add("uni");
+        System.out.println(words.remove(6));
         words.add("ebi");
         words.add("kani");
         System.out.println(words);
@@ -33,6 +35,7 @@ public class Tester{
         words.add("uni");
         words.add("ebi");
         words.add("kani");
+        System.out.println(words.remove(7));
         words.add("uni");
         System.out.println(words);
         words.add("ebi");
