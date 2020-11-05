@@ -92,16 +92,12 @@ public class SuperArray{
     }
 
     public String remove(int index){
-        String[] temp = data;
-        data = new String[data.length];
-        for(int i = 0; i<index; i++){
-            data[i]=temp[i];
-        }
+        String temp = data[index];
         for(int i = index+1; i<size; i++){
-            data[i-1]=temp[i];
+            data[i-1]=data[i];
         }
         size--;
-        return temp[index];
+        return temp;
     }
 
     public int indexOf(String s){
