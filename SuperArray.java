@@ -66,6 +66,15 @@ public class SuperArray{
         return out;
     }
 
+    public boolean contains(String s){
+        for(int i=0; i<size; i++){
+            if (s != null && s.equals(data[i])){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void add(int index, String element){
         if (size >= data.length){
             resize();
@@ -97,7 +106,7 @@ public class SuperArray{
 
     public int indexOf(String s){
         for(int i=0; i<size; i++){
-            if (s.equals(data[i])){
+            if (s != null && s.equals(data[i])){
                 return i;
             }
         }
