@@ -71,6 +71,7 @@ public class Tester{
         words.add("What");
         words.add("The");
         words.add("Cool");
+        String[] blah = words.toArray();
         words.add("my");
         words.add("name");
         words.add("is");
@@ -92,15 +93,11 @@ public class Tester{
         System.out.println(words);
         words.add("Cool");
         System.out.println(words);
-        for(int i = 0; i < words.size(); i++){
-        System.out.println( words.get(i) );
-            }
-        for(int i = 0; i < words.size(); i++){
-            words.set(i,""+i*i);
-            }
         for(int i = 0; i < words.size(); i++){
             System.out.println( words.get(i) );
             }
-        
+        for(int i = 0; i <blah.length; i++){
+            System.out.println(blah[i]);
+            }
     }
 }
