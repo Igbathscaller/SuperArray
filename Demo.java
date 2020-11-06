@@ -8,10 +8,26 @@ public class Demo {
         blah.add("hi2");
         blah.add("hi2");
         blah.add("hi2");
+        blah.add("hi5");
+        blah.add("hi3");
+        blah.add("hi5");
         blah.add("hi3");
         blah.add("hi3");
-        blah.add("hi3");
+        blah.add("hi2");
+        blah.add("hi2");
+        blah.add("hi5");
+        blah.add("hi2");
+        blah.add("hi5");
+        blah.add("hi5");
         removeDuplicates(blah);
+        SuperArray words = new SuperArray();
+        //grouped to save vertical space
+        words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");     
+        words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
+        words.add("una");    words.add("ebi");     words.add("toro"); 
+        System.out.println(words);
+        removeDuplicates(words);
+        System.out.println(words);
         System.out.println(blah);
     }
 /*
@@ -37,5 +53,14 @@ public class Demo {
                 s.remove(i);
             }
         }
+    }
+
+    public static SuperArray findOverlap(SuperArray a, SuperArray b){
+        SuperArray c = a;
+        removeDuplicates(c);
+        for(int i = 0; i<c.size();){
+
+        }
+        return c;
     }
 }
