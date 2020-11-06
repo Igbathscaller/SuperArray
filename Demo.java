@@ -24,10 +24,15 @@ public class Demo {
         //grouped to save vertical space
         words.add("kani");   words.add("uni");     words.add("ebi");     words.add("una");     
         words.add("una");    words.add("ebi");     words.add("kani");    words.add("una");
-        words.add("una");    words.add("ebi");     words.add("toro"); 
+        words.add("una");    words.add("ebi");     words.add("toro");
         System.out.println(words);
         removeDuplicates(words);
         System.out.println(words);
+        SuperArray word = new SuperArray();
+        word.add("ebi");     word.add("una");      word.add("kani");   word.add("unb");     
+        System.out.println(findOverlap(word, words));
+        System.out.println(findOverlap(words, word));
+        System.out.println(word);
         System.out.println(blah);
     }
 /*
@@ -56,11 +61,13 @@ public class Demo {
     }
 
     public static SuperArray findOverlap(SuperArray a, SuperArray b){
-        SuperArray c = a;
-        removeDuplicates(c);
-        for(int i = 0; i<c.size();){
-
+        SuperArray c = new SuperArray();
+        for(int i = 0; i<a.size();i++){
+            if(b.contains(a.get(i))){
+                c.add(a.get(i));
+            }
         }
+        removeDuplicates(c);
         return c;
     }
 }
