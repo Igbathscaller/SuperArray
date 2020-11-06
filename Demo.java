@@ -14,7 +14,7 @@ public class Demo {
         removeDuplicates(blah);
         System.out.println(blah);
     }
-
+/*
     public static void removeDuplicates(SuperArray s){
         for(int i = 0; i<s.size()-1;i++){
             for(int j=i+1; j<s.size();){
@@ -27,5 +27,15 @@ public class Demo {
             }
         }
     }
-    
+*/
+    public static void removeDuplicates(SuperArray s){
+        for(int i = 0; i<s.size();){
+            if (s.indexOf(s.get(i))==i){
+                i++;
+            }
+            else{
+                s.remove(i);
+            }
+        }
+    }
 }
