@@ -109,6 +109,18 @@ public class SuperArray{
         return -1;
     }
 
+    public int lastIndexOf(String value){
+        for(int i=size-1; i>=0; i--){
+            if (value != null && value.equals(data[i])){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean equals(SuperArray other){
+        return true;
+    }
 
     public String[] toArray(){
         String[] out = new String[size];
