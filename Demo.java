@@ -30,10 +30,17 @@ public class Demo {
         System.out.println(words);
         SuperArray word = new SuperArray();
         word.add("ebi");     word.add("una");      word.add("kani");   word.add("unb");     
+        SuperArray wos = new SuperArray();
+        wos.add("ebi");     wos.add("una");      wos.add("kani");   wos.add("unb");     wos.add("unb");
         System.out.println(findOverlap(word, words));
         System.out.println(findOverlap(words, word));
         System.out.println(word);
         System.out.println(blah);
+        System.out.println(word.equals(wos));
+        wos.remove(4);
+        System.out.println(word.equals(wos));
+        System.out.println(word);
+        System.out.println(wos);
     }
 /*
     public static void removeDuplicates(SuperArray s){
