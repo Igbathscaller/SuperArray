@@ -99,5 +99,12 @@ public class Tester{
         for(int i = 0; i <blah.length; i++){
             System.out.println(blah[i]);
             }
+        SuperArray hello = new SuperArray(2);
+        hello.add("hello");
+        hello.add("bob");
+        hello.add("red");
+        hello.add("rest");
+        System.out.println(hello.remove(3));
+        System.out.println(hello);
     }
 }
