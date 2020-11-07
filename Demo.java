@@ -41,6 +41,17 @@ public class Demo {
         System.out.println(word.equals(wos));
         System.out.println(word);
         System.out.println(wos);
+        System.out.println(zip(word,wos));
+        SuperArray ab = new SuperArray();
+        SuperArray bc = new SuperArray();
+        ab.add("a"); ab.add("b"); ab.add("c"); ab.add("d"); ab.add("e"); ab.add("f");
+        bc.add("0"); bc.add("1"); bc.add("2"); bc.add("3");
+        System.out.println(zip(ab,bc));
+        ab = new SuperArray();
+        bc = new SuperArray();
+        ab.add("a"); ab.add("b"); ab.add("c");
+        bc.add("0"); bc.add("1"); bc.add("2"); bc.add("3"); bc.add("4");
+        System.out.println(zip(ab,bc));
     }
 
     public static void removeDuplicates(SuperArray s){
