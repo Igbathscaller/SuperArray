@@ -1,24 +1,11 @@
 public class Demo {
     public static void main(String[]args){
         SuperArray blah = new SuperArray();
-        blah.add("hi");
-        blah.add("hi1");
-        blah.add("hi2");
-        blah.add("hi2");
-        blah.add("hi2");
-        blah.add("hi2");
-        blah.add("hi2");
-        blah.add("hi5");
-        blah.add("hi3");
-        blah.add("hi5");
-        blah.add("hi3");
-        blah.add("hi3");
-        blah.add("hi2");
-        blah.add("hi2");
-        blah.add("hi5");
-        blah.add("hi2");
-        blah.add("hi5");
-        blah.add("hi5");
+        blah.add("hi");         blah.add("hi1");        blah.add("hi2");        blah.add("hi2");        
+        blah.add("hi2");        blah.add("hi2");        blah.add("hi2");        blah.add("hi5");        
+        blah.add("hi3");        blah.add("hi5");        blah.add("hi3");        blah.add("hi3");
+        blah.add("hi2");        blah.add("hi2");        blah.add("hi5");        blah.add("hi2");       
+        blah.add("hi5");        blah.add("hi5");
         removeDuplicates(blah);
         SuperArray words = new SuperArray();
         //grouped to save vertical space
