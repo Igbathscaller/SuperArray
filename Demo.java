@@ -42,20 +42,7 @@ public class Demo {
         System.out.println(word);
         System.out.println(wos);
     }
-/*
-    public static void removeDuplicates(SuperArray s){
-        for(int i = 0; i<s.size()-1;i++){
-            for(int j=i+1; j<s.size();){
-                if (s.get(i).equals(s.get(j))){
-                    s.remove(j);
-                }
-                else{
-                    j++;
-                }
-            }
-        }
-    }
-*/
+
     public static void removeDuplicates(SuperArray s){
         for(int i = 0; i<s.size();){
             if (s.indexOf(s.get(i))==i){
@@ -77,4 +64,30 @@ public class Demo {
         removeDuplicates(c);
         return c;
     }
+
+    public static SuperArray zip(SuperArray a, SuperArray b){
+    
+        SuperArray high = b;
+        int        low = a.size();
+
+        if (a.size()>b.size()){
+            high = a;
+            low  = b.size();
+        }
+    
+        SuperArray c = new SuperArray(a.size()+b.size());
+    
+        for(int i = 0; i < low; i++){
+            c.add(a.get(i));
+            c.add(b.get(i));
+        }
+
+        for(int i = low; i < high.size(); i++){
+            c.add(high.get(i));
+        }
+
+        return c;
+
+    }
+
 }
