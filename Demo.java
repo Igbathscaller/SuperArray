@@ -1,7 +1,16 @@
 public class Demo {
     public static void main(String[]args){
+        SuperArray input = new SuperArray();
+        for(int i = 0; i<args.length;i++){
+            input.add(args[i]);
+        }
+        System.out.println(input.contains("hi"));
+        System.out.println(input);
+        removeDuplicates(input);
+        System.out.println(input);
         SuperArray blah = new SuperArray();
         blah.add("hi");         blah.add("hi1");        blah.add("hi2");        blah.add("hi2");        
+        input.equals(blah);
         blah.add("hi2");        blah.add("hi2");        blah.add("hi2");        blah.add("hi5");        
         blah.add("hi3");        blah.add("hi5");        blah.add("hi3");        blah.add("hi3");
         blah.add("hi2");        blah.add("hi2");        blah.add("hi5");        blah.add("hi2");       
