@@ -24,6 +24,9 @@ public class Tester{
         words.add("uni");
         System.out.println(words.remove(6));
         words.add("ebi");
+        //System.out.println(words.get(610));
+        //System.out.println(words.get(-610));
+        //System.out.println(words.get(0));
         words.add("kani");
         System.out.println(words);
         words.add("uni");
