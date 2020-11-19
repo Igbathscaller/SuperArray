@@ -91,7 +91,7 @@ public class SuperArray{
     }
 
     public void add(int index, String element){
-        if (size<=index){
+        if (size<index){
             throw new IndexOutOfBoundsException("It's too big");
         }
         if (index<0){
@@ -113,7 +113,7 @@ public class SuperArray{
     }
 
     public String remove(int index){
-        if (size<=index){
+        if (index>=size){
             throw new IndexOutOfBoundsException("It's too big");
         }
         if (index<0){
